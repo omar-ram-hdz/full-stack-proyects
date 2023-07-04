@@ -1,0 +1,30 @@
+html,
+body {
+  background-color: #130b38;
+  color: white;
+}
+
+section {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-areas: "img title";
+}
+
+section > h1 {
+  grid-area: title;
+  font-size: 4em;
+}
+
+section > img {
+  grid-area: img;
+}
+
+input {
+  outline: 0;
+}
+
+input:focus,
+input:active {
+  outline: 0;
+}

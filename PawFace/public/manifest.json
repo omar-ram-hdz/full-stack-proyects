@@ -1,0 +1,21 @@
+{
+  "name": "Paw Face Social Network",
+  "short_name": "pawface",
+  "start_url": ".",
+  "theme": "light",
+  "background_color": "#fff",
+  "description": "Una red social para mascotas",
+  "icons": [
+    {
+      "src": "img/paw-face-logo.ico",
+      "sizes": "256x250",
+      "type": "image/ico"
+    },
+    {
+      "src": "img/paw-face-logo.png",
+      "sizes": "2684x2616",
+      "type": "image/png"
+    }
+  ],
+  "related_applications": []
+}

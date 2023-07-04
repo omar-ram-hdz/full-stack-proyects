@@ -1,0 +1,15 @@
+extends layout
+block content
+  section
+    img(src=icon alt="icono")
+    h1= title
+
+  form
+    label(for="nombre") Nombre:
+    input(type="text" name="nombre" autocomplete="off")
+    label(for="edad") Edad:
+    input(type="number" name="edad" autocomplete="off")
+
+
+
+  script(src=jsFile)
