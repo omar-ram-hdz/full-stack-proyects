@@ -1,0 +1,49 @@
+:root {
+  --azul-profundo: #0a101b; /* Background */
+  --amarillo-dorado: #cbbd41; /* titulos-llamadas a accion */
+  --gris-azulado: #6e7c8d; /* texto principal */
+  --gris-claro: #e8e8e8; /* Espacios em blanco, texto alternativo */
+  --naranga: #ff7f50; /* botones, enlaces */
+  --azul-grisaseo: #97aabd; /* Fragmentos especiales de texto */
+  --beige-dorado: #d8b881; /* fondo para contenido de resalte util */
+  --azul-gris-profundo: #354a5f; /* Elementos de navegacion */
+  --rosa-oscuro: #b85e89; /* Elementos especiales */
+}
+h1 {
+  text-align: center;
+}
+
+form {
+  background-color: var(--gris-claro);
+  width: 50%;
+  display: block;
+  margin: auto;
+  outline: none;
+  padding: 10px;
+  &:active,
+  :focus {
+    outline: none;
+  }
+  & input {
+    width: 100%;
+    height: 40px;
+    display: block;
+    border: 2.5px solid black;
+    margin-bottom: 10px;
+    &:invalid {
+      border-color: var(--naranga);
+    }
+    &:valid {
+      border-color: #3a775c;
+    }
+  }
+  & button {
+    width: 100%;
+    display: block;
+    height: auto;
+    padding: 10px;
+    border-radius: 40px;
+    font-size: 2.5em;
+    margin-top: 1em;
+  }
+}

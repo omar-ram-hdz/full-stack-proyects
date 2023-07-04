@@ -1,0 +1,69 @@
+main {
+  padding-left: 30px;
+  padding-right: 30px;
+  & h2 {
+    font-size: 4em;
+    border-top: 80px;
+    text-align: center;
+    color: #decb45;
+    background-color: transparent;
+  }
+  & .languaje-card {
+    display: block;
+    margin: auto;
+    max-width: 900px;
+    min-height: 10vh;
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 8px;
+    border: thin solid #1f2f3b;
+  }
+  & .languaje-card h3 {
+    font-size: 2.5em;
+    color: #edeeed;
+    font-family: "Comic Sans MS";
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  & .languaje-card > span {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  & .languaje-card > span > img {
+    max-width: 50px;
+    height: auto;
+  }
+  & p,
+  a {
+    font-size: 1.6em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    padding: 0;
+    padding-top: 20vh;
+    & h2 {
+      font-size: 1.5em;
+      margin-top: 10vh;
+    }
+    & p {
+      font-size: 0.8em;
+    }
+    & [class*="a-btn-"] {
+      max-width: 50vw;
+      font-size: 0.9em;
+    }
+    & .languaje-card {
+      width: 100%;
+      overflow: hidden;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 50px;
+      & h3 {
+        font-size: 1em;
+      }
+    }
+  }
+}

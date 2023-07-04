@@ -1,0 +1,31 @@
+{
+  "name": "Mi sitio web Omar Ramirez Hernandez",
+  "short_name": "omar",
+  "start_url": ".",
+  "theme": "light",
+  "background_color": "#fff",
+  "description": "Mi pagina web",
+  "icons": [
+    {
+      "src": "/img/bat-icon.ico",
+      "sizes": "256x210",
+      "type": "image/ico"
+    },
+    {
+      "src": "/img/bat-icon.png",
+      "sizes": "1754x1442",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/bat-icon-color.ico",
+      "sizes": "253x256",
+      "type": "image/ico"
+    },
+    {
+      "src": "/img/bat-icon-color.png",
+      "sizes": "2940,2980",
+      "type": "image/png"
+    }
+  ],
+  "related_applications": []
+}

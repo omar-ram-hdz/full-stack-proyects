@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/bat-icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <title>RAMHER | Proyectos</title>
+    <style>
+      body {
+        padding-top: 10vh;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Proximamente...</h1>
+    <div id="here"></div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", async (e) => {
+        if (window.innerWidth < 700) {
+          axios.get("/api?header=gral").then((res) => {
+            setTimeout(() => {
+              document.querySelector("#here").outerHTML = res.data;
+            }, 70);
+          });
+        } else {
+          axios.get("/api?header=desk").then((res) => {
+            setTimeout(() => {
+              console.log(res);
+              document.querySelector("#here").outerHTML = res.data;
+            }, 70);
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
